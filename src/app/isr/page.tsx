@@ -6,7 +6,7 @@ export const revalidate = 60
 async function getData() {
   // Simulate API call
   await new Promise(resolve => setTimeout(resolve, 100))
-  
+
   return {
     timestamp: new Date().toLocaleString('en-SG', { timeZone: 'Asia/Singapore' }),
     randomNumber: Math.floor(Math.random() * 1000)

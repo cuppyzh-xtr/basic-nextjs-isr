@@ -3,7 +3,7 @@ import styles from '../page.module.css'
 async function getData() {
   // Simulate real-time data fetching
   await new Promise(resolve => setTimeout(resolve, 100))
-  
+
   return {
     timestamp: new Date().toISOString(),
     serverTime: new Date().toLocaleString('en-SG', { timeZone: 'Asia/Singapore' })

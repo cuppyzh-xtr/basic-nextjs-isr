@@ -14,14 +14,14 @@ interface Product {
 async function getProduct(id: string): Promise<Product> {
   // Simulate API call
   await new Promise(resolve => setTimeout(resolve, 100))
-  
+
   const products: Record<string, Product> = {
     '1': { id: 1, name: 'Product A', price: 29.99, description: 'Amazing product A', details: 'This is an amazing product with great features.' },
     '2': { id: 2, name: 'Product B', price: 49.99, description: 'Fantastic product B', details: 'A fantastic choice for your needs.' },
     '3': { id: 3, name: 'Product C', price: 19.99, description: 'Great product C', details: 'Great value for money.' },
     '4': { id: 4, name: 'Product D', price: 99.99, description: 'Premium product D', details: 'Premium quality and features.' },
   }
-  
+
   return products[id] || products['1']
 }
 

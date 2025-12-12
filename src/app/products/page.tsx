@@ -14,7 +14,7 @@ interface Product {
 async function getProducts(): Promise<Product[]> {
   // Simulate API call
   await new Promise(resolve => setTimeout(resolve, 100))
-  
+
   return [
     { id: 1, name: 'Product A', price: 29.99, description: 'Amazing product A' },
     { id: 2, name: 'Product B', price: 49.99, description: 'Fantastic product B' },

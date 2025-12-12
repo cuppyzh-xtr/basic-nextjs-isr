@@ -5,6 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Enable standalone output for AWS Amplify
+  output: 'standalone',
 }
 
 module.exports = nextConfig
