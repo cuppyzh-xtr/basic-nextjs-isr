@@ -8,7 +8,7 @@ async function getData() {
   await new Promise(resolve => setTimeout(resolve, 100))
   
   return {
-    timestamp: new Date().toISOString(),
+    timestamp: new Date().toLocaleString('en-SG', { timeZone: 'Asia/Singapore' }),
     randomNumber: Math.floor(Math.random() * 1000)
   }
 }

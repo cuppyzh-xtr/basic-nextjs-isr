@@ -6,7 +6,7 @@ async function getData() {
   
   return {
     timestamp: new Date().toISOString(),
-    serverTime: new Date().toLocaleString()
+    serverTime: new Date().toLocaleString('en-SG', { timeZone: 'Asia/Singapore' })
   }
 }
 

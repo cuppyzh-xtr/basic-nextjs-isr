@@ -25,7 +25,7 @@ async function getProducts(): Promise<Product[]> {
 
 export default async function ProductsPage() {
   const products = await getProducts()
-  const generatedAt = new Date().toLocaleString()
+  const generatedAt = new Date().toLocaleString('en-SG', { timeZone: 'Asia/Singapore' })
 
   return (
     <div className={styles.container}>

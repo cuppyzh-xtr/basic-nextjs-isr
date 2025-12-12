@@ -1,7 +1,7 @@
 import styles from '../page.module.css'
 
 export default function StaticPage() {
-  const buildTime = new Date().toISOString()
+  const buildTime = new Date().toLocaleString('en-SG', { timeZone: 'Asia/Singapore' })
 
   return (
     <div className={styles.container}>

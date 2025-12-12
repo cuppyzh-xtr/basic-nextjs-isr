@@ -37,7 +37,7 @@ export async function generateStaticParams() {
 
 export default async function ProductPage({ params }: { params: { id: string } }) {
   const product = await getProduct(params.id)
-  const generatedAt = new Date().toLocaleString()
+  const generatedAt = new Date().toLocaleString('en-SG', { timeZone: 'Asia/Singapore' })
 
   return (
     <div className={styles.container}>
